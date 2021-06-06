@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 as tools
 RUN dotnet tool install --tool-path /tools dotnet-trace
 RUN dotnet tool install --tool-path /tools dotnet-dump
+RUN dotnet tool install --tool-path /tools dotnet-gcdump
 RUN dotnet tool install --tool-path /tools dotnet-counters
 
 FROM mcr.microsoft.com/dotnet/runtime:5.0 AS runtime
