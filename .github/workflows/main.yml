@@ -83,5 +83,5 @@ jobs:
         with:
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/tools:$GITHUB_RUN_NUMBER
-            docker.pkg.github.com/${{ github.repository }}/tools:$GITHUB_RUN_NUMBER
+            docker.pkg.github.com/${{ github.repository }}/tools:${{ github.run_number }}
+            docker.pkg.github.com/${{ github.repository }}/tools:${{ github.run_number }}
