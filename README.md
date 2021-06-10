@@ -48,8 +48,18 @@ option 2:
 # Run dotnet-dump
 // TODO: needs some fixes. it fails on mac  
 ```
+# from sidecar-container
 > dotnet-dump collect -p [1]
 
+```
+
+# Run dotnet-gcdump
+```
+# from sidecar-container
+> dotnet-gcdump report -p [1]
+
+# from local terminal
+> docker cp [containerId]:tools/counters.json [.]
 ```
 
 
